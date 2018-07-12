@@ -1,0 +1,74 @@
+<html lang="pt-br">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRONT END - ITELIOS</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="api-response.js"></script>
+
+<style>
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+	/* css folha de estilo */
+    body{ padding: 0px; margin: 0px; overflow-x: hidden;}
+	#response{ position: absolute; float: left; width: 100%; margin: 0px auto; }
+	
+	ul { list-style-type: none; }
+	ul li { float: left; max-width: 22%; height: 350px; border: 1px solid #edeaea; padding: 10px; display: inline-block; }
+	.objs li { float: left; max-width: 23%; height: 350px; border: 1px solid #edeaea; display: inline-block; }
+	.title { text-decoration: none; float: left; height: 94px; color: #373839; font-family: 'Roboto Condensed', sans-serif; }
+	li img { margin: auto !important; width: 172px; height: 172px; display: block; }
+	.itens:hover {
+	background: #e5e5e5; 
+	background: -moz-linear-gradient(top, #e5e5e5 2%, #ffffff 63%); 
+	background: -webkit-linear-gradient(top, #e5e5e5 2%,#ffffff 63%); 
+	background: linear-gradient(to bottom, #e5e5e5 2%,#ffffff 63%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 );
+/* IE6-9 */ height: 461px; }
+	.box-item-text { position: relative; bottom: -11px; }
+	.text { font-size:17px; color:  #5e6774; font-family: 'Roboto', sans-serif; }
+	.price { font-size: 20px; color: #353f4f; font-family: 'Roboto', sans-serif; font-weight: bold; }
+	.txtp { float: left; width: 100%;  margin: 0px 44px; font-size:26px; color:  #5e6774; font-weight: bold; font-family: 'Roboto', sans-serif; }
+	.txtp p { width: 300px; display: inline-block; }
+	.box-btn { display: none; }
+	.p-item { color: #5e6774; font-family: 'Roboto', sans-serif; font-size: 25px; font-weight: bold; padding: 0px; position: relative; }
+	.p-itens {color: #5e6774; font-family: 'Roboto', sans-serif; font-size: 25px; font-weight: bold; padding: 0px; position: relative; margin: -55px 24%; }
+    i { float: right; padding: 1px 5px}
+	ul .btns { display: block; color: #3f4857; font-size: 17px; border-left:5px solid #fff; font-weight: bold; background: #fff; width: 80%; height: 55px; border: 1px solid #ccc; margin: 40px auto !important;  }
+	.box-footer { float: right; margin: 8% 8%; position: relative; }
+	.box-footer button { border-left:5px solid #fff; height: 45px; background: #fff; padding: 12px; font-size: 17px; color: #3f4857; font-weight: bold; border: none; margin:0px 14px; }
+	.footer-itens { position: relative; margin-top: 173px; float: left; bottom: 0px; width: 100%; height: 300px; background: #ccc; } 
+/* mobile estilo */
+@media screen and (max-width: 768px) {
+
+	ul li { display: block; min-width: 100%; margin: 0px auto !important; padding: 0px; }
+	ul li:hover {
+	background: #e5e5e5; 
+	background: -moz-linear-gradient(top, #e5e5e5 2%, #ffffff 63%); 
+	background: -webkit-linear-gradient(top, #e5e5e5 2%,#ffffff 63%); 
+	background: linear-gradient(to bottom, #e5e5e5 2%,#ffffff 63%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 );
+/* IE6-9 */ height: 461px; }
+    .objs li { padding: 0px; }
+    .p-itens{ margin: 0px 5%; }
+    .title, .text, .price { padding: 0px 10px; }
+	.txtp { margin: auto; padding: 10px  }
+	.box-footer {  margin: 10% auto !important; position: absolute; }
+	.footer-itens { position: relative; margin-top: 103px; float: left; bottom: 0px; width: 100%; height: 120px; } 
+	ul {  width: 90%; padding: 0px; margin: 0px auto; }
+}
+</style>
+
+</head>
+<body>
+	<!-- div response recebe o retorno do json  -->
+	<div id="response">
+			
+	</div>
+	<!--  end retorno -->
+</body>
+</html>
