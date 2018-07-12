@@ -96,7 +96,7 @@ function IteliosJson(arr) {
         out += '<div class="footer-itens"><div class="box-footer"><button>adicionar ao carrinho <i class="material-icons">add_shopping_cart</i></button</div></div>'; 
         //functions js
         $(document).ready(function(){
-
+          //oculta os botoes add ao carrinho
           $(".btns").hide();
           
           // efeitos hover + add ao carrinho btns on
@@ -109,11 +109,13 @@ function IteliosJson(arr) {
             $(this).find("img").css({"width":"172px","height":"172px"});
            
           });
+            
           $(".btns").hover(function() {
             $(this).find("i").css({"color":"#ff6600"});
           }, function() {
             $(this).find("i").css({"color":"#3f4857"});
           });
+            
           $(".box-footer button").hover(function() {
             $(this).css({"border-left":"5px solid #ff6600"});             
             $(this).find("i").css({"color":"#ff6600"});
@@ -123,7 +125,7 @@ function IteliosJson(arr) {
             $(this).find("i").css({"color":"#3f4857"});
           });
 
-          // efeitos transição auto -> 3 segundos  
+          // pega posição de cada item da lista nas (lilimits) -> limite de itens
           setInterval(function(){
 
             var lifirst = $("li").attr("id");
