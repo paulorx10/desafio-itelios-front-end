@@ -32,7 +32,7 @@ retornados, caso os paramentros nextitem == FALSE e nextsop  == null || 0
 
 nextsop recebe como dado o retorno vindo de localstorage session armazedado como 0 por padrão no campo stop a cada novo reflesh.
 
-Abaixo esta a função Click que faz com que o autoload dos itens entre em pausa, ativando a nextitem == TRUE 
+Abaixo desativada "comentada" esta a função Click que faz com que o autoload dos itens entre em pausa, ativando a nextitem == TRUE 
 
 e adicionado 1 ao localstorage -> stop, setado como 0 por padrão, assim desta forma, não entra no IF de verificação
 
@@ -46,4 +46,7 @@ Efeitos de hover, utilizando Jquery para incluir os botões de add ao carrinho +
 
 do background gradient "cinza com branco" ao passar o mouse ou click no item.
 
+-----
+
+Adaptação mobile criando uma lista em bloco, com transição dos itens de baixo para cima, mantendo os feitos hover(click).
 
